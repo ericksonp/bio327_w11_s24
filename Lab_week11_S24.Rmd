@@ -15,12 +15,12 @@ scp NETID@spydur:~/shared_perickso/your_name_folder/Lab8/subset_snps_no_repeats_
 scp NETID@spydur:~/shared_perickso/your_name_folder/Lab8/sample_names.txt ./
 
 ```
-We are going to need to tell our R package the names of our samples and pool sizes (# of individuals that were pooled) of our two samples. You can find the order of the samples in the sample_names.txt file that you just copied over.  Then you will need to update the code below with the names of your two samples in the order they are present in the vcf file. You will also need to tell it the number of individuals in each pool. You can find the number of individuals from the information in the samples.txt file that was downloaded with this lab. The total number of samples in in the second-to-last-column of the file. 
+We are going to need to tell our R package the names of our samples and pool sizes (# of individuals that were pooled) of our two samples. You can find the order of the samples by double clicking on the `sample_names.txt` file that was downloaded with this workbook. The total number of samples in in the second-to-last-column of the file (the last column is the proportion males)
 
 **Question** what are the names and total sample sizes of your two samples based on the samples.txt file? 
 **Answer here**
 
-Now let's read our two-sample vcf file in to the `poolfstat` package. You are going to need to provide the names of the two samples and the number of individuals in each sample in the lines indicated below . This step will take a couple minutes to read in the many SNPs in our file. 
+Now let's read our two-sample vcf file in to the `poolfstat` package. You are going to need to provide the names of the two samples and the number of individuals in each sample, which you just determined above, in the lines indicated below. This step will take a couple minutes to read in the many SNPs in our file. 
 
 ```{r}
 library(poolfstat)
@@ -188,9 +188,14 @@ sw.results
 Now take a look at the sw.results data table to orient yourself to the new dataset:
 
 **Question** How is this data table different from our previous data table?
+
 **Answer here**
 
+
 **Question** How do you think CumulatedPosition is different from position? Hint: consider what will happen when you move from chromosome 1 to chromosome 2. 
+
+**Answer here**
+
 
 Use the code you learned above to calculate the 99.99% quantile for your sliding window FST
 ```{r}
