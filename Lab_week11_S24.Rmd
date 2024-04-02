@@ -15,7 +15,7 @@ scp NETID@spydur:~/shared_perickso/your_name_folder/Lab8/subset_snps_no_repeats_
 scp NETID@spydur:~/shared_perickso/your_name_folder/Lab8/sample_names.txt ./
 
 ```
-We are going to need to tell our R package the names of our samples and pool sizes (# of individuals that were pooled) of our two samples. You can find the order of the samples by double clicking on the `sample_names.txt` file that was downloaded with this workbook. The total number of samples in in the second-to-last-column of the file (the last column is the proportion males)
+We are going to need to tell our R package the names of our samples and pool sizes (# of individuals that were pooled) of our two samples. You can find the order of the samples by double clicking on the `sample_names.txt` file that was just downloaded. The total number of samples is in the second-to-last-column of the `samples.txt` file (the last column is the proportion males). 
 
 **Question** what are the names and total sample sizes of your two samples based on the samples.txt file? 
 **Answer here**
